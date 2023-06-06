@@ -1,0 +1,11 @@
+.divContainer {
+    height: 100vh;
+}
+
+.divNombre {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    opacity: 0.8;
+    font-weight: bolder;
+}
