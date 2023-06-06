@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 // import { Inter } from 'next/font/google'
 import Navbar1 from "@/components/NavBar1";
-import { NavBar } from "@/components/NavBar";
 import { Main } from "@/components/Main";
 
 // const inter = Inter({ subsets: ['latin'] })

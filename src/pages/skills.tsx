@@ -1,4 +1,3 @@
-import { NavBar } from '@/components/NavBar'
 import Navbar1 from '@/components/NavBar1'
 import React from 'react'
 
