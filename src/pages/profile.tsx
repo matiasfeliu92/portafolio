@@ -1,13 +1,13 @@
 import { NavBar } from '@/components/NavBar'
 import Navbar1 from '@/components/NavBar1'
+import { Profile } from '@/components/Profile'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
       <Navbar1/>
-      {/* <NavBar/> */}
-      <h1>PROFILE PAGE</h1>
+      <Profile/>
     </div>
   )
 }
