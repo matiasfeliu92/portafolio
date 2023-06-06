@@ -1,6 +1,6 @@
 import connectDB from '@/config/db';
 import IWorks from '@/interfaces/Works';
-import { Work } from '@/models/Works';
+import { Work } from '@/models/works';
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 export default async function handler(
