@@ -1,0 +1,45 @@
+.nav__bar {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.botonMobileNav {
+    color: white
+}
+
+.navItem {
+    color: white;
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.liFont {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+
+.navItem:hover {
+    color: white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 0px;
+}
+
+/* @media (max-width: 425px) { */
+    /* button h1 { */
+        /* border: 1px solid white; */
+        /* border-radius: 25px; */
+      /* } */
+    /* .nav__bar {
+        background-color:white;
+    } */
+    /* button {
+        color: white;
+    } */
+/* } */
