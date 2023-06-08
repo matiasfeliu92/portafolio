@@ -23,7 +23,7 @@ const page = ({ data }:Props) => {
 
 export async function getStaticProps() {
   try {
-    const res = await fetch("http://localhost:3000/api/skills")
+    const res = await fetch("http://localhost:3000/api/skills" || "https://matias-mazparrote-full-stack-dev.vercel.app/api/skills")
     const data = await res.json()
     return {
       props: { data }
