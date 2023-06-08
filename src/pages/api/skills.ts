@@ -7,9 +7,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ISkills[]>
 ) {
-    // connectDB()
+    connectDB()
     try {
-        const skills: ISkills[] = await Skill.find().exec();
+        const skills: ISkills[] = await Skill.find()
         return res.status(200).json(skills)
     } catch (error) {
         console.error('Failed to retrieve skills:', error);
