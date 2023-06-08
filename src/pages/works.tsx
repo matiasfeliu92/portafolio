@@ -24,7 +24,7 @@ const works = ({data}: Props) => {
 
 export async function getStaticProps() {
   try {
-    const res = await fetch("http://localhost:3000/api/works" || "https://matias-mazparrote-full-stack-dev.vercel.app/api/works")
+    const res = await fetch(`${process.env.REACT_APP_URL}/api/works`)
     const data = await res.json()
     return {
       props: { data }
