@@ -1,15 +1,15 @@
 import connectDB from '@/config/db';
 import IWorks from '@/interfaces/Works';
-import { Work } from '@/models/works';
+import Work from '@/models/works';
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<IWorks[]>
 ) {
-    // connectDB()
+    connectDB()
     try {
-        const works: IWorks[] = await Work.find().exec();
+        const works: IWorks[] = await Work.find()
         return res.status(200).json(works)
     } catch (error) {
         console.error('Failed to retrieve works:', error);

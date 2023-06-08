@@ -1,0 +1,127 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 3vw;
+}
+
+.trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.trabajos__titulo {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        border-radius: 50px;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: bolder;
+        width: 100%;
+        color: white;
+}
+
+.trabajos__titulo i {
+    color: white
+}
+
+.trabajos__work {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white
+}
+
+.trabajos__webs {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    border-radius: 25px;
+}
+
+.trabajos__webs:hover {
+    background-color:rgb(22, 22, 141);
+}
+
+.trabajos__webs a {
+    text-decoration: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.trabajos__img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.linkGit:hover {
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+@media (max-width: 425px) {
+    .trabajos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+    }
+
+    .trabajos__titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 100vw;
+    }
+
+    .trabajos__work {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .trabajos__webs {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .trabajos__img {
+        width: 100%;
+        height: auto;
+    }
+}
