@@ -7,6 +7,9 @@ const WorkSchema = new mongoose.Schema({
     image: String,
     link_git: String,
     link_web: String
-})
+});
 
-export const Work = mongoose.models.WorkSchema || mongoose.model("Work", WorkSchema)
+// Verificar si el modelo ya está definido antes de compilarlo
+const Work = mongoose.models.Work || mongoose.model("Work", WorkSchema);
+
+export default Work;
