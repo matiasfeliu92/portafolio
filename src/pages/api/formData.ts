@@ -1,8 +1,10 @@
+import connectDB from "@/config/db";
 import { IForm } from "@/interfaces/form";
 import { FormContact } from "@/models/formContact";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler (req: NextApiRequest, res: NextApiResponse) {
+    connectDB()
     if(req.method === 'POST') {
         const {nombre, apellido, correo, telefono, mensaje}: IForm = req.body
         try {
