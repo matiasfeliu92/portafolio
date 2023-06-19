@@ -7,6 +7,6 @@ const formContactSchema = new mongoose.Schema({
     correo: String,
     telefono: String,
     mensaje: String,
-})
+}, { collection: 'formContact' })
 
 export const FormContact = mongoose.models.FormContact || mongoose.model("FormContact", formContactSchema)
