@@ -3,7 +3,7 @@ import ICv from "@/interfaces/Cv";
 import { Cv } from "@/models/cv";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler (req: NextApiRequest, res: NextApiResponse) {
+export default async function handler (req: NextApiRequest, res: NextApiResponse<ICv[]>) {
     connectDB()
     try {
         const cvUrl: ICv[] = await Cv.find()
