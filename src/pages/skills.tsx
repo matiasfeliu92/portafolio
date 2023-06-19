@@ -15,7 +15,7 @@ const page = ({ data }: Props) => {
         <div className={`${styles.compet__hab}`}>
           {data.map((skill: ISkills) => (
             <div
-              className="compet__habText col-md-2 text-center flex-column justify-content-between"
+              className={`${styles.compet__habText} col-md-2 text-center flex-column justify-content-between`}
               key={skill.name}
             >
               <img
